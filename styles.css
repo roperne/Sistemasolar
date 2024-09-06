@@ -1,0 +1,528 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    background-color: #000000; /* Cor de fundo da página */
+    background-size: cover;
+    background-image: url(wall2.jpg);
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+
+    font-size: 4rem; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    margin-top: 25rem;
+    margin-bottom: 100px;
+
+}
+
+.pesquisa-btn {
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  padding: 0.8rem 1.2rem;
+  border: none;
+}
+
+.pesquisa-btn:hover {
+  background-color: #a7a9ac; /* Muda a cor de fundo ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    margin-top: 5rem;
+    color: #4b4545; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+.button-main {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #30475E; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+.button-main:hover {
+    background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+    color: #FFFFFF;
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #F5F7F8; /* Cor de fundo do rodapé */
+    color: #45474B; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0rem; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    height: 8%;
+    position: sticky; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+    }
+
+    section input {
+        width: 25rem; /* Largura dos inputs em telas menores */
+        padding: 0.8rem; /* Espaçamento interno em telas menores */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem; /* Largura da caixa de resultados em telas menores */
+        height: 40vh; /* Altura da caixa de resultados em telas menores */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
+
+
+
+.planeta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta a largura mínima das colunas */
+    gap: 0rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: -15rem;
+    margin-right: -30rem;
+  }
+  
+  .planeta-btn {
+    grid-row: 1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(mercurio.png);
+    background-size: 80PX;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    margin-left: 8rem;
+  }
+  
+  .planeta-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .planeta-info {
+    grid-row: 2;
+    text-align:start;
+    color: #FFFFFF;
+    margin-left: 6rem;
+    margin-right: 40rem;
+    margin-top: -11rem;
+    cursor: none;
+    font-weight: bold;
+    transition: opacity .8s ease-in-out;
+    opacity: 0;
+
+  }
+
+  
+  .planeta-btn:hover + .planeta-info {
+    opacity: 1;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    
+  }
+
+  .planeta-btn2 {
+    grid-row: 1;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: url(venus.png);
+    background-size: 110PX;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    margin-left: 5rem;
+    border: none;
+  }
+
+  .planeta-btn2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .planeta-info2 {
+    grid-row: 2;
+    text-align:start;
+    color: #FFFFFF;
+    margin-left: 2.5rem;
+    margin-right: 40rem;
+    margin-top: -15rem;
+    cursor: none;
+    font-weight: bold;
+    transition: opacity .8s ease-in-out;
+    opacity: 0;
+  }
+
+  .planeta-btn2:hover + .planeta-info2 {
+    opacity: 1;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    
+  }
+
+  .planeta-btn3 {
+    grid-row: 1;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(terra.png);
+    background-size: 120PX;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    margin-left: 4rem;
+    border: none;
+  }
+
+  .planeta-btn3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .planeta-info3 {
+    grid-row: 2;
+    text-align:start;
+    color: #FFFFFF;
+    margin-top: 0rem;
+    margin-left: -1rem;
+    margin-right: 5rem;
+    margin-top: -15rem;
+    cursor: none;
+    font-weight: bold;
+    transition: opacity .8s ease-in-out;
+    opacity: 0;
+  }
+
+  .planeta-btn3:hover + .planeta-info3 {
+    opacity: 1;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    
+  }
+
+  .planeta-btn4 {
+    grid-row: 1;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url(marte.png);
+    background-size: 100PX;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    margin-left: 4rem;
+    border: none;
+  }
+
+  .planeta-btn4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .planeta-info4 {
+    grid-row: 2;
+    text-align:start;
+    color: #FFFFFF;
+    margin-top: 0rem;
+    margin-left: 2rem;
+    margin-right: 45rem;
+    margin-top: -13rem;
+    cursor: none;
+    font-weight: bold;
+    transition: opacity .8s ease-in-out;
+    opacity: 0;
+  }
+
+  .planeta-btn4:hover + .planeta-info4 {
+    opacity: 1;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    
+  }
+
+  .planeta-btn5 {
+    grid-row: 1;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(jupter.png);
+    background-size: 300PX;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    margin-left: 4rem;
+    border: none;
+    margin-left: 1rem;
+  }
+
+  .planeta-btn5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .planeta-info5 {
+    grid-row: 2;
+    text-align:start;
+    color: #FFFFFF;
+    margin-top: 0rem;
+    margin-left: -2rem;
+    margin-right: 5rem;
+    margin-top: -28rem;
+    cursor: none;
+    font-weight: bold;
+    transition: opacity .8s ease-in-out;
+    opacity: 0;
+  }
+
+  .planeta-btn5:hover + .planeta-info5 {
+    opacity: 1;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    
+  }
+
+  .planeta-btn6 {
+    grid-row: 1;
+    width: 260px;
+    height: 190px;
+    border-radius: 20%;
+    background-image: url(saturno\ 23.png);
+    background-size: 290px;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    margin-left: 5rem;
+    background-color: transparent;
+    border: none;
+  }
+
+  .planeta-btn6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .planeta-info6 {
+    grid-row: 2;
+    text-align:start;
+    color: #FFFFFF;
+    margin-top: 0rem;
+    margin-left: 4rem;
+    margin-right: 5rem;
+    margin-top: -26rem;
+    cursor: none;
+    font-weight: bold;
+    transition: opacity .8s ease-in-out;
+    opacity: 0;
+  }
+
+  .planeta-btn6:hover + .planeta-info6 {
+    opacity: 1;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    
+  }
+
+  .planeta-btn7 {
+    grid-row: 1;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url(netuno.png);
+    background-size: 190PX;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    margin-left: 6rem;
+    border: none;
+    margin-left: 10rem;
+  }
+
+  .planeta-btn7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .planeta-info7 {
+    grid-row: 2;
+    text-align:start;
+    color: #FFFFFF;
+    margin-top: 0rem;
+    margin-left: 10rem;
+    margin-right: 40rem;
+    margin-top: -20rem;
+    cursor: none;
+    font-weight: bold;
+    transition: opacity .8s ease-in-out;
+    opacity: 0;
+
+  }
+
+  .planeta-btn7:hover + .planeta-info7 {
+    opacity: 1;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    
+  }
+
+  .planeta-btn8 {
+    grid-row: 1;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url(urano.png);
+    background-size: 200PX;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    margin-left: 9rem;
+    border: none;
+  }
+
+  .planeta-btn8 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .planeta-info8 {
+    grid-row: 2;
+    text-align:start;
+    color: #FFFFFF;
+    margin-top: 0rem;
+    margin-left: 8rem;
+    margin-right: 40rem;
+    margin-top: -19rem;
+    cursor: none;
+    font-weight: bold;
+    transition: opacity .8s ease-in-out;
+    opacity: 0;
+  }
+
+  .planeta-btn8:hover + .planeta-info8 {
+    opacity: 1;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    
+  }
+  
